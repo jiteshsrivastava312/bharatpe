@@ -43,7 +43,7 @@ with open(latest_csv, mode="r", newline="") as file:
             "ANI": row["ANI"],
             "CREATED": row["CREATED"],
             "agentName": row["agentName"],
-            "AgentId": row.get("AgentId", "")  # Set empty if not available
+            "AgentId": row.get("agentid", "")  # Set empty if not available
         }
 
         # Send API Request
