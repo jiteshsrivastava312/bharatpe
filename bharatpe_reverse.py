@@ -39,7 +39,7 @@ with open(latest_csv, mode="r", newline="") as file:
             "callType": row["callType"],
             "fileSize": row["fileSize"],  
             "callDuration": row["callDuration"],
-            "DNIS": row["ANI"],  # Mapping DNIS from ANI column if needed
+            "DNIS": row["DNIS"],  # Mapping DNIS from ANI column if needed
             "ANI": row["ANI"],
             "CREATED": row["CREATED"],
             "agentName": row["agentName"],
