@@ -54,7 +54,7 @@ with open(csv_file, mode="w", newline="") as file:
     # Writing Header Row (AgentId removed)
     writer.writerow([
         "ftpPath", "fileName", "key1", "vendor", "callType", "callDuration",
-        "ANI", "CREATED", "agentid", "fileSize"  # Removed AgentId
+        "ANI", "CREATED", "agentid", "fileSize", "agentName", "DNIS"  # Removed AgentId
     ])
     
     # Writing Data Rows
@@ -91,3 +91,4 @@ cursor.close()
 conn.close()
 
 print(f"CSV file '{csv_file}' has been created successfully with formatted data!")
+
